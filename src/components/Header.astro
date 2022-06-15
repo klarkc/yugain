@@ -5,6 +5,11 @@ import { SkipLinks } from 'accessible-astro-components'
 
 <header>
   <SkipLinks client:load />
+  <Navigation client:load>
+    <li class="menu-item">
+      <a href="/">Home</a>
+    </li>
+  </Navigation>
 </header>
 
 <style lang="scss">
