@@ -3,6 +3,7 @@ layout: ../../layouts/BlogLayout.astro
 title: Hello world!
 author: Nate Moore
 value: 128
+publishDate: 12 Sep 2021
 description: Just a Hello World Post!
 ---
 
