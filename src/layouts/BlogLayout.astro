@@ -1,0 +1,34 @@
+---
+import DefaultLayout from './DefaultLayout.astro'
+
+const {title, author, description} = Astro.props.content
+---
+
+<DefaultLayout {title} {description}>
+  <section class="margin-48">
+    <div class="container">
+      <h1>{title}</h1><br>
+      <p>By {author}</p>
+    </div>
+  </section>
+  <section class="margin-48">
+    <div class="container">
+      <p class="size-20"><slot /></p>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    @media (min-width: 550px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+    @media (min-width: 950px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
