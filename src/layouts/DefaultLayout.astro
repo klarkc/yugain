@@ -3,9 +3,12 @@ import '../assets/scss/globals.scss'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
-const {title, description} = Astro.props
-let subtitle = 'Accessible Astro Starter'
-const desc = description || 'A starter project with accessible features using Astro static site builder. Contains accessible landmarks, skip links, a dark mode color scheme, better focus outline and keyboard menu navigation.'
+const { site, props } = Astro;
+
+const {
+  title,
+  description = 'Refer to earn',
+} = props
 ---
 
 <html lang="en" dir="ltr">
@@ -23,14 +26,14 @@ const desc = description || 'A starter project with accessible features using As
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 
     <!-- open graph -->
-    <meta property="og:title" content="Yugain">
-    <meta property="og:description" content="{desc}">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yugain.io">
+    <meta property="og:url" content={site}>
     <meta property="og:image" content="/social-preview-image.png">
 
     <!-- page title -->
-    <title>{title} - {subtitle}</title>
+    <title>{title}</title>
   </head>
   <body>
     <Header />
