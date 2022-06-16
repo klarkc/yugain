@@ -1,8 +1,8 @@
-# Accessible Astro Starter
+# Yugain
 
 This starter project is build upon the (awesome) [Astro Static Site Builder](https://astro.build/). To help you build your project *faster*, this theme includes some dedicated accessible components (such as a keyboard accessible and responsive navigation) and several components coming from the [Accessible Astro Components](https://github.com/markteekman/accessible-astro-components) npm package. This theme also includes example pages, a blog with dynamic routes, a custom 404 page and many **Design System** utility classes, patterns and primatives (such as grids, buttons, lists, spacings, sizes and more).
 
-[Live demo](https://starter.accessible-astro.dev)
+[Live demo](https://yugain.io)
 
 ## Getting started
 Run the following commands in your project folder to get started:
